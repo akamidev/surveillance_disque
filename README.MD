@@ -51,13 +51,14 @@ usage_threshold = 56  # Seuil par défaut, ajuster selon ton besoin
 
 Par défaut, le script surveille le disque C:. Si tu souhaites surveiller un autre disque, tu peux modifier la variable disk_to_monitor :
 
-    ```bash
-    disk_to_monitor = "D:\\"  # Par exemple pour surveiller le disque D:
-    ``` 
+```bash
+disk_to_monitor = "D:\\"  # Par exemple pour surveiller le disque D:
+``` 
 ### Script Python 🖥️
 
 Voici le script complet :
 
+```bash
 import shutil
 import smtplib
 from email.mime.text import MIMEText
@@ -109,6 +110,8 @@ if __name__ == "__main__":
     
     check_disk_usage(disk_to_monitor, usage_threshold)
 
+``` 
+
 ### Automatisation 🕒
 
 Planifier l'exécution automatique du script avec le Planificateur de tâches Windows
@@ -132,10 +135,11 @@ Planifier l'exécution automatique du script avec le Planificateur de tâches Wi
 - Dans **Programme/script**, tape python.
 - Dans **Ajouter des arguments**, entre le chemin complet vers ton script Python. Par exemple :
 
-    ```bash
+   ```bash
     C:\Scripts\surveillance_disque.py
-
+   ```
 - Clique sur OK.
+
 5. **Finaliser la tâche :**
 
 - Vérifie que tout est configuré correctement, puis clique sur OK pour sauvegarder la tâche.
@@ -150,7 +154,7 @@ Pour simuler un test immédiat :
 
 ### Auteur 👨‍💻
 
-- Mehdi Akami - Ton profil GitHub
+- Mehdi Akami - [Mon profil GitHub](https://github.com/akamidev)
   
 ### Licence 📜
 
@@ -166,5 +170,3 @@ Ce projet est sous licence MIT. Consulte le fichier [LICENSE] pour plus d'inform
 - **Script Python** : Contient le code du script complet.
 - **Automatisation** : Explique comment planifier l'exécution du script avec le Planificateur de tâches.
 - **Test de l'alerte** : Guide pour vérifier si l'alerte email fonctionne correctement.
-
-Tu peux copier-coller tout ceci dans ton `README.md` et le partager avec ta communauté sur GitHub. Si tu as besoin de plus d'aide, n'hésite pas à me le dire !
