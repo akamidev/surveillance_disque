@@ -24,7 +24,7 @@ def alert_user(percent_used, disk):
 # Fonction pour envoyer un email
 def send_email(subject, body):
     from_email = "akamimehdi.dev@gmail.com"  # Ton email Gmail
-    password = "gpng hdwo btkv uvhh"  # Remplace par le mot de passe d'application généré
+    password = "YOUR-PASSWORD"  # Remplace par le mot de passe d'application généré
     to_email = "akamimehdi.dev@gmail.com"     # Email où tu veux recevoir l'alerte
     
     msg = MIMEText(body)
@@ -45,6 +45,6 @@ if __name__ == "__main__":
     # Chemin du disque à surveiller (par exemple C:\ pour Windows)
     disk_to_monitor = "C:\\"
     # Seuil d'alerte (ici 56% pour tester rapidement)
-    usage_threshold = 50
+    usage_threshold = 80
     
     check_disk_usage(disk_to_monitor, usage_threshold)
