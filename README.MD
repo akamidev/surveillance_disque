@@ -26,6 +26,7 @@ Ce script Python surveille l'utilisation de l'espace disque et envoie une alerte
 1. **Cloner ce repository** sur ton système :
    ```bash
    git clone https://github.com/tonutilisateur/surveillance-espace-disque.git
+   ```
 
 2. **Configurer les paramètres SMTP :**
 
@@ -36,6 +37,7 @@ Ce script Python surveille l'utilisation de l'espace disque et envoie une alerte
    
    ```bash
    python surveillance_disque.py
+   ```
 
 ### Personnalisation ⚙️
 
@@ -44,15 +46,16 @@ Par défaut, le script est configuré pour déclencher une alerte lorsque l'espa
 
     ```bash
     usage_threshold = 56  # Seuil par défaut, ajuster selon ton besoin
-
+    ```
 ### Modifier le disque surveillé 
 
 Par défaut, le script surveille le disque C:. Si tu souhaites surveiller un autre disque, tu peux modifier la variable disk_to_monitor :
 
     ```bash
     disk_to_monitor = "D:\\"  # Par exemple pour surveiller le disque D:
-    
+    ``` 
 ### Script Python 🖥️
+
 Voici le script complet :
 
 import shutil
