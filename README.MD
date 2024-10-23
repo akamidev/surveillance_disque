@@ -44,9 +44,9 @@ Ce script Python surveille l'utilisation de l'espace disque et envoie une alerte
 Modifier le seuil d'alerte
 Par défaut, le script est configuré pour déclencher une alerte lorsque l'espace disque utilisé dépasse 56%. Tu peux ajuster ce seuil en modifiant la variable usage_threshold dans le script :
 
-    ```bash
-    usage_threshold = 56  # Seuil par défaut, ajuster selon ton besoin
-    ```
+```bash
+usage_threshold = 56  # Seuil par défaut, ajuster selon ton besoin
+```
 ### Modifier le disque surveillé 
 
 Par défaut, le script surveille le disque C:. Si tu souhaites surveiller un autre disque, tu peux modifier la variable disk_to_monitor :
